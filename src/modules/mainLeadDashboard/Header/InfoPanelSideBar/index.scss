@@ -1,0 +1,71 @@
+.info-panel-container {
+  background: #ffffff;
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  overflow: auto;
+  margin-top: 48px;
+  transition: transform 0.4s ease;
+  transform: translateX(0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 600;
+  z-index: 9999;
+  .info-panel-close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px;
+    .info-status-label {
+      font-size: 14px;
+    }
+    .close-icon {
+      cursor: pointer;
+    }
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    .sub-profile-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .profile-labels {
+        color: #008ddd;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+    .profile-icon-block {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      .profile-icons {
+        border-radius: 50%;
+        width: 42%;
+      }
+    }
+  }
+  .notification-container {
+    display: flex;
+    flex-direction: column;
+    .notification-label {
+      margin: 10px;
+      font-size: 15px;
+    }
+  }
+}
+
+.ispanel-close {
+  width: 0;
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transform: translateX(100%);
+}
+
+@media only screen and (max-width: 950px) {
+  .info-panel-container {
+    margin-top: 48px;
+    width: 63%;
+  }
+}

@@ -1,0 +1,222 @@
+.lead-card-container {
+  width: 83%;
+  height: 393px;
+  border: 1px solid #dee5e6;
+  display: flex;
+  margin: 2% 0% 2% 0%;
+  .locations-and-workspace-block {
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3% 0% 0% 3%;
+    .locations-and-workspace-verify-block {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .verify-block {
+        display: flex;
+        align-items: center;
+        width: 162px;
+        justify-content: space-evenly;
+      }
+      .expiriy-block {
+        display: flex;
+        align-items: center;
+        width: 162px;
+        justify-content: space-evenly;
+      }
+    }
+    .verify-img {
+      width: 30px;
+    }
+    .location-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 7% 0% 2% 3%;
+      width: 97%;
+      .location-label {
+        font-size: 22px;
+      }
+      .location-and-area-block {
+        display: flex;
+        align-items: center;
+        margin: 6% 0% 6% 0%;
+        width: 100%;
+        .area-list-block {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .workspace-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0% 0% 0% 3%;
+      width: 97%;
+      .workspace-label {
+        font-size: 22px;
+        margin-bottom: 5%;
+      }
+      .workspace-type-img {
+        width: 75px;
+      }
+    }
+  }
+  .lead-divider {
+    width: 0.2%;
+    margin: 5% 0% 5% 0%;
+    background: #e9eef1;
+  }
+  .seats-and-lead-details {
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 4% 0% 0%;
+    .view-and-claim-details {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .view-lead-details {
+      font-size: 13px;
+      margin-left: 4%;
+      border-bottom: 1px solid;
+      cursor: pointer;
+      padding-bottom: 4px;
+    }
+    .available-seats-data-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 6%;
+      .seats-available-label-block {
+        margin-left: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .number-of-seats-label {
+          font-size: 20px;
+        }
+      }
+      .available-seats-count {
+        font-size: 68px;
+        margin-left: 10%;
+        width: 17%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .seat-img {
+        width: 72px;
+      }
+    }
+    .summary-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 3%;
+      .summary-label {
+        font-size: 20px;
+      }
+      .seats-details {
+        width: 52%;
+        text-align: right;
+        margin-top: 1%;
+        font-size: 13px;
+      }
+    }
+  }
+}
+.view-lead-container {
+  width: 500px;
+  .view-lead-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .view-lead-inner-label {
+      width: 28%;
+    }
+    .view-lead-inner-detail {
+      color: #000000;
+      margin-left: 9px;
+    }
+  }
+}
+.lead-card-container-height-lg {
+  height: 427px;
+}
+
+@media only screen and (max-width: 950px) {
+  .lead-card-container {
+    flex-direction: column;
+    height: 100%;
+    margin: 2% 0% 2% 0%;
+    .locations-and-workspace-block {
+      width: 100%;
+      margin-bottom: 10%;
+      .locations-and-workspace-verify-block {
+        .verify-label {
+          font-size: 13px;
+        }
+      }
+      .location-block .location-label {
+        font-size: 18px;
+      }
+      .workspace-block {
+        .workspace-label {
+          font-size: 18px;
+        }
+      }
+    }
+    .seats-and-lead-details {
+      width: 100%;
+      margin-bottom: 6%;
+      .available-seats-data-container {
+        margin-left: 6%;
+        justify-content: normal;
+      }
+      .view-and-claim-details {
+        margin-left: 6%;
+        justify-content: normal;
+      }
+      .summary-block {
+        align-items: normal;
+        margin-left: 6%;
+        margin-top: 6%;
+        .seats-details {
+          text-align: left;
+          width: 77%;
+          font-size: 11px;
+        }
+        .summary-label {
+          font-size: 18px;
+        }
+      }
+      .available-seats-data-container {
+        .seats-available-label-block {
+          .number-of-seats-label {
+            font-size: 14px;
+          }
+        }
+        .seat-img {
+          width: 51px;
+        }
+      }
+      .available-seats-data-container .available-seats-count {
+        font-size: 36px;
+      }
+    }
+    .lead-divider {
+      display: none;
+    }
+  }
+  .view-lead-container {
+    font-size: 10px;
+    width: auto;
+  }
+}
