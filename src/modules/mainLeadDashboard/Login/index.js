@@ -84,7 +84,12 @@ class Login extends Component {
             this.setState({ loginPassword: event.target.value })
           }
         />
-        <Button className="login-btn">Login</Button>
+        <Button
+          className="login-btn"
+          onClick={() => this.props.history.push("/dashboard")}
+        >
+          Login
+        </Button>
         <div className="forgot-password-block">
           <span className="forgot-password-label" onClick={this.callForgotPwd}>
             Forgot Password?
@@ -202,7 +207,12 @@ class Login extends Component {
             </span>
           </span>
         </div>
-        <Button className="signup-btn">Request Access</Button>
+        <Button
+          className="signup-btn"
+          onClick={() => this.props.history.push("/dashboard")}
+        >
+          Request Access
+        </Button>
         <div className="forgot-password-block">
           Already an User?
           <span className="forgot-password-label" onClick={this.callLogin}>
