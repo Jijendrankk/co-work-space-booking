@@ -19,7 +19,7 @@ function NavRoute({ exact, path, component: Component }) {
     <Route
       exact={exact}
       path={path}
-      render={props => (
+      render={(props) => (
         <div className="sidebar-with-header-container">
           <SideBar
             isOpen={openSideBarStatus}
@@ -42,7 +42,7 @@ class Routing extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/account" component={Login} />
+        <Route exact path="/" component={Login} />
         <NavRoute exact path="/dashboard" component={LandingPage} />
       </Switch>
     );
